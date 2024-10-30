@@ -4,6 +4,11 @@ namespace DDDNerdStore.Catalogo.Domain;
 
 public class Produto : Entity, IAggregateRoot
 {
+    protected Produto()
+    {
+        
+    }
+    
     public Produto(string nome, string descricao, decimal valor, Guid categoriaId, Dimensoes dimensoes,
         DateTime dataCadastro,
         string? imagem, bool ativo)

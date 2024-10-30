@@ -46,7 +46,9 @@ public class ProdutoAppService : IProdutoAppService
 
     public async Task Atualizar(ProdutoDTO produto)
     {
-        _produtoRepository.Atualizar(_mapper.Map<Produto>(produto));
+        var produtoDomain = _mapper.Map<Produto>(produto);
+        
+        _produtoRepository.Atualizar(produtoDomain);
         await _produtoRepository.UnitOfWork.Commit();
     }
 

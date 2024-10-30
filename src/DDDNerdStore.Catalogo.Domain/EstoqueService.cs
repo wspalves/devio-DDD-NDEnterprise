@@ -24,7 +24,7 @@ public class EstoqueService : IEstoqueService
         produto.DebitarEstoque(quantidade);
 
         if (produto.QuantidadeEstoque < 10)
-            _mediator.PublicarEvento(new ProdutoAbaixoEstoqueEvent(produtoId, produto.QuantidadeEstoque));
+            await _mediator.PublicarEvento(new ProdutoAbaixoEstoqueEvent(produtoId, produto.QuantidadeEstoque));
 
         _produtoRepository.Atualizar(produto);
         return await _produtoRepository.UnitOfWork.Commit();

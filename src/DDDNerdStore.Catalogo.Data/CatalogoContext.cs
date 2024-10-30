@@ -4,12 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DDDNerdStore.Catalogo.Data;
 
-public class CatalogoContext : DbContext, IUnitOfWork
+public class CatalogoContext(DbContextOptions<CatalogoContext> options) : DbContext(options), IUnitOfWork
 {
-    public CatalogoContext(DbContextOptions<CatalogoContext> options) : base(options)
-    {
-    }
-
     public DbSet<Produto> Produtos { get; set; }
     public DbSet<Categoria> Categorias { get; set; }
 
@@ -38,6 +34,7 @@ public class CatalogoContext : DbContext, IUnitOfWork
             }
         }
 
-        return await base.SaveChangesAsync() > 0;
+        var saved = await SaveChangesAsync();
+        return saved > 0;
     }
 }

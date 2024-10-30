@@ -13,7 +13,7 @@ public class ProdutoEventHandler : INotificationHandler<ProdutoAbaixoEstoqueEven
 
     public async Task Handle(ProdutoAbaixoEstoqueEvent notification, CancellationToken cancellationToken)
     {
-        var produto = _produtoRepository.ObterProdutoPorIdAsync(notification.AggregateId);
+        var produto = await _produtoRepository.ObterProdutoPorIdAsync(notification.AggregateId);
 
         //Envia e-mail
         //Dispara outro evento...
