@@ -8,17 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea954f1e-acd8-4fd2-a71b-ec58a8e36144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Events/ProdutoAbaixoEstoqueEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Events/ProdutoEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/IMediatrHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/MediatrHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/DomainEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/Event.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/DomainToViewModelMappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/DTOs/CategoriaDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/DTOs/ProdutoDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/IProdutoAppService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/ProdutoAppService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/DDDNerdStore.Catalogo.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/DDDNerdStore.Catalogo.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730292306155</updated>
-      <workItem from="1730292307288" duration="12868000" />
+      <workItem from="1730292307288" duration="15697000" />
     </task>
     <servers />
   </component>
