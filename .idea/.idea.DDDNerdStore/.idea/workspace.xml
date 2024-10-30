@@ -8,21 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea954f1e-acd8-4fd2-a71b-ec58a8e36144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DDDNerdStore.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Categoria.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Dimensoes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Produto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/DomainException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/Entity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/IAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/Validacoes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/CategoriaMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/ProductMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/IProdutoRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Data/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Data/IUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Categoria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Categoria.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +33,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d83d3dc29c14b7e95c03dbe447e7cb021420/60/2eeb8a1b/Assert.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ea354601080cd9165da8954e71b15647a63c14ecaf2192dbe2fbefce85e022/Record.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -100,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730292306155</updated>
-      <workItem from="1730292307288" duration="7305000" />
+      <workItem from="1730292307288" duration="10002000" />
     </task>
     <servers />
   </component>
