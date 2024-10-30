@@ -8,15 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea954f1e-acd8-4fd2-a71b-ec58a8e36144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/CategoriaMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/ProductMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/IProdutoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Data/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Data/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/IEstoqueService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Categoria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Categoria.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730292306155</updated>
-      <workItem from="1730292307288" duration="10002000" />
+      <workItem from="1730292307288" duration="10725000" />
     </task>
     <servers />
   </component>
