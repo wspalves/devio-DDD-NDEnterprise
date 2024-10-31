@@ -11,31 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea954f1e-acd8-4fd2-a71b-ec58a8e36144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/Admin/AdminProdutosController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Setup/DependencyInjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/AdminProdutos/AtualizarProduto.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/AdminProdutos/Estoque.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/AdminProdutos/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/AdminProdutos/NovoProduto.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Shared/_CookieConsentPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/camiseta1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/camiseta2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/camiseta3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/camiseta4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/caneca1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/caneca2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/caneca3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/caneca4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/wwwroot/Images/cards.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/Command.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Enums/PedidoStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Enums/TipoDescontoVoucher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Interfaces/IPedidoRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/PedidoItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Produto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Voucher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/DTOs/ProdutoDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/DTOs/ProdutoDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/ProdutoAppService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/ProdutoAppService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/CatalogoContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/CatalogoContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/DDDNerdStore.Catalogo.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/DDDNerdStore.Catalogo.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Produto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Produto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/Entity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "a10701e5-9c09-4737-af8a-dbe9fd0801d2.executor": "Debug",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -193,7 +179,8 @@
       <option name="presentableId" value="Default" />
       <updated>1730292306155</updated>
       <workItem from="1730292307288" duration="19203000" />
-      <workItem from="1730319931166" duration="4737000" />
+      <workItem from="1730319931166" duration="6177000" />
+      <workItem from="1730380272348" duration="7831000" />
     </task>
     <servers />
   </component>
@@ -201,6 +188,14 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -9,6 +9,11 @@ public abstract class Entity
         Id = Guid.NewGuid();
     }
 
+    public virtual bool EhValido()
+    {
+        throw new NotImplementedException();
+    }
+
     public override bool Equals(object? obj)
     {
         var compareTo = obj as Entity;

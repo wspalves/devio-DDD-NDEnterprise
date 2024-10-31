@@ -7,8 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation" Version="11.10.0" />
-      <PackageReference Include="MediatR" Version="12.4.1" />
+      <Folder Include="Events\" />
+      <Folder Include="Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DDDNerdStore.Core\DDDNerdStore.Core.csproj" />
     </ItemGroup>
 
 </Project>
