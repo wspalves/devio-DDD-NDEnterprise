@@ -1,6 +1,7 @@
 using System.Reflection;
 using DDDNerdStore.Catalogo.Application.AutoMapper;
 using DDDNerdStore.Catalogo.Data;
+using DDDNerdStore.Vendas.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using DDDNerdStore.WebApp.MVC.Data;
@@ -16,6 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDbContext<CatalogoContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDbContext<VendasContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

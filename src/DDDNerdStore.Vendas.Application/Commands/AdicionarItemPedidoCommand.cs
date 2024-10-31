@@ -4,7 +4,8 @@ namespace DDDNerdStore.Vendas.Application.Commands;
 
 public class AdicionarItemPedidoCommand : Command
 {
-    public AdicionarItemPedidoCommand(Guid clienteId, Guid produtoId, string nome, int quantidade, decimal valorUnitario)
+    public AdicionarItemPedidoCommand(Guid clienteId, Guid produtoId, string nome, int quantidade,
+        decimal valorUnitario)
     {
         ClienteId = clienteId;
         ProdutoId = produtoId;
@@ -18,4 +19,10 @@ public class AdicionarItemPedidoCommand : Command
     public string Nome { get; private set; }
     public int Quantidade { get; private set; }
     public decimal ValorUnitario { get; private set; }
+
+    public override bool EhValido()
+    {
+        ValidationResult = new AdicionarItemPedidoValidator().Validate(this);
+        return ValidationResult.IsValid;
+    }
 }

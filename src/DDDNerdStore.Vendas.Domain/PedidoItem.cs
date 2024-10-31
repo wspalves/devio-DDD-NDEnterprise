@@ -19,8 +19,7 @@ public class PedidoItem : Produto
     public int Quantidade { get; private set; }
 
     public decimal ValorUnitario { get; private set; }
-
-
+    
     public Pedido Pedido { get; set; }
 
     internal void AssociarPedido(Guid pedidoId) => PedidoId = pedidoId;

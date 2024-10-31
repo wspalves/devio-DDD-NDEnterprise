@@ -15,7 +15,6 @@ public class CategoriaMapping : IEntityTypeConfiguration<Categoria>
             .HasColumnType("varchar(200)");
 
         // 1 : N => Categorias : Produtos
-
         builder.HasMany(c => c.Produtos)
             .WithOne(p => p.Categoria)
             .HasForeignKey(p => p.CategoriaId);

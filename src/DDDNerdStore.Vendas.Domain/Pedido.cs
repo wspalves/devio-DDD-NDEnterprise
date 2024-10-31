@@ -20,7 +20,7 @@ public class Pedido : Entity, IAggregateRoot
 
     public int Codigo { get; private set; }
     public Guid ClienteId { get; private set; }
-    public Guid VoucherId { get; private set; }
+    public Guid? VoucherId { get; private set; }
     public bool VoucherUtilizado { get; private set; }
     public decimal Desconto { get; private set; }
     public decimal ValorTotal { get; private set; }
@@ -28,7 +28,7 @@ public class Pedido : Entity, IAggregateRoot
     public PedidoStatus PedidoStatus { get; private set; }
     private readonly List<PedidoItem> _pedidoItems;
     public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
-    public virtual Voucher Voucher { get; private set; }
+    public Voucher Voucher { get; private set; }
 
     public void AplicarVoucher(Voucher voucher)
     {

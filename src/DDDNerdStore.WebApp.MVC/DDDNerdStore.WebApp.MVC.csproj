@@ -24,6 +24,8 @@
     <ItemGroup>
       <ProjectReference Include="..\DDDNerdStore.Catalogo.Application\DDDNerdStore.Catalogo.Application.csproj" />
       <ProjectReference Include="..\DDDNerdStore.Catalogo.Data\DDDNerdStore.Catalogo.Data.csproj" />
+      <ProjectReference Include="..\DDDNerdStore.Vendas.Application\DDDNerdStore.Vendas.Application.csproj" />
+      <ProjectReference Include="..\DDDNerdStore.Vendas.Data\DDDNerdStore.Vendas.Data.csproj" />
     </ItemGroup>
 
 </Project>

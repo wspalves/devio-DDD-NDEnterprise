@@ -7,9 +7,9 @@ namespace DDDNerdStore.Catalogo.Domain;
 public class EstoqueService : IEstoqueService
 {
     private readonly IProdutoRepository _produtoRepository;
-    private readonly IMediatrHandler _mediator;
+    private readonly IMediatorHandler _mediator;
 
-    public EstoqueService(IProdutoRepository produtoRepository, IMediatrHandler mediator)
+    public EstoqueService(IProdutoRepository produtoRepository, IMediatorHandler mediator)
     {
         _produtoRepository = produtoRepository;
         _mediator = mediator;
