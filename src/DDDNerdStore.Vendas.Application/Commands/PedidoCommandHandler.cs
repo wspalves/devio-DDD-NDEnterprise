@@ -1,6 +1,7 @@
 using DDDNerdStore.Core.Communication.Mediator;
 using DDDNerdStore.Core.Messages;
 using DDDNerdStore.Core.Messages.CommonMessages.Notifications;
+using DDDNerdStore.Vendas.Application.Events;
 using DDDNerdStore.Vendas.Domain;
 using DDDNerdStore.Vendas.Domain.Interfaces;
 using MediatR;
@@ -23,7 +24,7 @@ public class PedidoCommandHandler : IRequestHandler<AdicionarItemPedidoCommand, 
         if (!ValidarComando(message))
             return false;
 
-        var pedido = await _pedidoRepository.ObterPedidoRascunhoPorIdAsync(message.ClienteId);
+        var pedido = await _pedidoRepository.ObterPedidoRascunhoPorClientIdAsync(message.ClienteId);
         var pedidoItem = new PedidoItem(message.ProdutoId, message.Nome, message.Quantidade, message.ValorUnitario);
 
         if (pedido == null)
@@ -45,9 +46,14 @@ public class PedidoCommandHandler : IRequestHandler<AdicionarItemPedidoCommand, 
             }
             else
             {
-                _pedidoRepository.AtualizarItem(pedidoItem);
+                _pedidoRepository.AdicionarItem(pedidoItem);
             }
+
+            pedido.AdicionarEvento(new PedidoAtualizadoEvent(pedido.ClienteId, pedido.Id, pedido.ValorTotal));
         }
+
+        pedido.AdicionarEvento(new PedidoItemAdicionadoEvent(pedido.ClienteId, pedido.Id, message.ProdutoId,
+            message.ValorUnitario, message.Quantidade, message.Nome));
 
         return await _pedidoRepository.UnitOfWork.Commit();
     }

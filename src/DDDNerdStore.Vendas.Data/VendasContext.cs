@@ -1,12 +1,17 @@
+using DDDNerdStore.Core.Communication.Mediator;
 using DDDNerdStore.Core.Data;
 using DDDNerdStore.Core.Messages;
 using DDDNerdStore.Vendas.Domain;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace DDDNerdStore.Vendas.Data;
 
-public class VendasContext(DbContextOptions<VendasContext> options) : DbContext(options), IUnitOfWork
+public class VendasContext(DbContextOptions<VendasContext> options, IMediatorHandler mediatorHandler)
+    : DbContext(options), IUnitOfWork
 {
+    private readonly IMediatorHandler _mediatorHandler = mediatorHandler;
+
     public DbSet<Pedido> Pedidos { get; set; }
     public DbSet<PedidoItem> PedidoItems { get; set; }
     public DbSet<Voucher> Vouchers { get; set; }
@@ -27,7 +32,7 @@ public class VendasContext(DbContextOptions<VendasContext> options) : DbContext(
         }
 
         modelBuilder.HasSequence<int>("MinhaSequencia").StartsAt(1000).IncrementsBy(1);
-        
+
         base.OnModelCreating(modelBuilder);
     }
 
@@ -47,7 +52,11 @@ public class VendasContext(DbContextOptions<VendasContext> options) : DbContext(
             }
         }
 
-        var saved = await SaveChangesAsync();
-        return saved > 0;
+        var sucesso = await SaveChangesAsync() > 0;
+
+        if (sucesso)
+            await _mediatorHandler.PublicarEventosAsync(this);
+
+        return sucesso;
     }
 }

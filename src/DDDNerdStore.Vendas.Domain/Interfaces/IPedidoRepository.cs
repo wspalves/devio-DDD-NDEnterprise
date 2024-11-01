@@ -6,7 +6,7 @@ public interface IPedidoRepository : IRepository<Pedido>
 {
     Task<Pedido> ObterPedidoPorIdAsync(Guid pedidoId);
     Task<IEnumerable<Pedido>> ObterListaPedidosPorClienteIdAsync(Guid clienteId);
-    Task<Pedido> ObterPedidoRascunhoPorIdAsync(Guid pedidoId);
+    Task<Pedido> ObterPedidoRascunhoPorClientIdAsync(Guid pedidoId);
     void AdicionarPedido(Pedido pedido);
     void AtualizarPedido(Pedido pedido);
 

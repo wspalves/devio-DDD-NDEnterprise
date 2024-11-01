@@ -27,10 +27,10 @@ public class PedidoRepository : IPedidoRepository
         return await _context.Pedidos.AsNoTracking().Where(p => p.ClienteId == clienteId).ToListAsync();
     }
 
-    public async Task<Pedido> ObterPedidoRascunhoPorIdAsync(Guid pedidoId)
+    public async Task<Pedido> ObterPedidoRascunhoPorClientIdAsync(Guid clientId)
     {
         var pedido = await _context.Pedidos.FirstOrDefaultAsync(p =>
-            p.PedidoStatus == PedidoStatus.Rascunho && p.Id == pedidoId);
+            p.PedidoStatus == PedidoStatus.Rascunho && p.ClienteId == clientId);
 
         if (pedido == null)
             return null;

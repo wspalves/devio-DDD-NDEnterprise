@@ -1,6 +1,7 @@
 ﻿using DDDNerdStore.Catalogo.Domain;
 using DDDNerdStore.Catalogo.Domain.Entities;
 using DDDNerdStore.Core.Data;
+using DDDNerdStore.Core.Messages;
 using Microsoft.EntityFrameworkCore;
 
 namespace DDDNerdStore.Catalogo.Data;
@@ -15,6 +16,8 @@ public class CatalogoContext(DbContextOptions<CatalogoContext> options) : DbCont
         foreach (var property in modelBuilder.Model.GetEntityTypes()
                      .SelectMany(e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
             property.SetColumnType("varchar(100)");
+
+        modelBuilder.Ignore<Event>();
 
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
     }

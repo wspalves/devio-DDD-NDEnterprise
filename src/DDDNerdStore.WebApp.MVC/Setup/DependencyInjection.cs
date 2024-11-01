@@ -6,6 +6,7 @@ using DDDNerdStore.Catalogo.Domain.Events;
 using DDDNerdStore.Core.Communication.Mediator;
 using DDDNerdStore.Core.Messages.CommonMessages.Notifications;
 using DDDNerdStore.Vendas.Application.Commands;
+using DDDNerdStore.Vendas.Application.Events;
 using DDDNerdStore.Vendas.Data;
 using DDDNerdStore.Vendas.Data.Repository;
 using DDDNerdStore.Vendas.Domain.Interfaces;
@@ -34,5 +35,9 @@ public static class DependencyInjection
         services.AddScoped<VendasContext>();
         services.AddScoped<IPedidoRepository, PedidoRepository>();
         services.AddScoped<IRequestHandler<AdicionarItemPedidoCommand, bool>, PedidoCommandHandler>();
+        
+        services.AddScoped<INotificationHandler<PedidoRascunhoIniciadoEvent>, PedidoEventHandler>();
+        services.AddScoped<INotificationHandler<PedidoAtualizadoEvent>, PedidoEventHandler>();
+        services.AddScoped<INotificationHandler<PedidoItemAdicionadoEvent>, PedidoEventHandler>();
     }
 }
