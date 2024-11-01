@@ -1,6 +1,6 @@
 using DDDNerdStore.Core.DomainObjects;
 
-namespace DDDNerdStore.Catalogo.Domain;
+namespace DDDNerdStore.Catalogo.Domain.Entities;
 
 public class Categoria : Entity
 {

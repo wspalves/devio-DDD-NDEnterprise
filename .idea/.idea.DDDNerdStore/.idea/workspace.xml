@@ -11,38 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea954f1e-acd8-4fd2-a71b-ec58a8e36144" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/PedidoCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/Validator/AdicionarItemPedidoValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/Mappings/PedidoItemMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/Mappings/PedidoMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/Mappings/VoucherMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/Repository/PedidoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/VendasContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/CarrinhoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/ControllerBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/VitrineController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Vitrine/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Vitrine/ProdutoDetalhe.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/281be497-b4c0-4ff3-9fba-305bcf6d0f8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/281be497-b4c0-4ff3-9fba-305bcf6d0f8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/4f1ac990-5785-412f-b270-bc0e856369c0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/4f1ac990-5785-412f-b270-bc0e856369c0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/4f1ac990-5785-412f-b270-bc0e856369c0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/dataSources/4f1ac990-5785-412f-b270-bc0e856369c0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/CommonMessages/Notifications/DomainNotification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/CommonMessages/Notifications/DomainNotificationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Extensions/SummaryViewComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Shared/Components/Summary/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DDDNerdStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDDNerdStore.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DDDNerdStore.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/DomainToViewModelMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/DomainToViewModelMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/ProdutoAppService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Application/Services/ProdutoAppService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/CatalogoContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/CatalogoContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/CategoriaMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/CategoriaMapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/ProductMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Mappings/ProductMapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain.Tests/ProdutoTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain.Tests/ProdutoTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Categoria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Categoria.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Produto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Entities/Produto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/EstoqueService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/IMediatrHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/IMediatrHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/MediatrHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/MediatrHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Events/ProdutoAbaixoEstoqueEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/Events/ProdutoAbaixoEstoqueEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/IProdutoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/IProdutoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/ValueObjects/Dimensoes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Catalogo.Domain/ValueObjects/Dimensoes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/IMediatrHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Communication/Mediator/IMediatorHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/Bus/MediatrHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Communication/Mediator/MediatorHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/DDDNerdStore.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Core/DomainObjects/DomainEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Core/Messages/CommonMessages/DomainEvents/DomainEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/AdicionarItemPedidoCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/AdicionarItemPedidoCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/DDDNerdStore.Vendas.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/DDDNerdStore.Vendas.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/DDDNerdStore.Vendas.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Data/DDDNerdStore.Vendas.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Interfaces/IPedidoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Interfaces/IPedidoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Pedido.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Pedido.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/PedidoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/PedidoItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Voucher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Domain/Voucher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/DDDNerdStore.WebApp.MVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/DDDNerdStore.WebApp.MVC.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/PedidoCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/PedidoCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/Validator/AdicionarItemPedidoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/Validator/AdicionarItemPedidoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/CarrinhoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/CarrinhoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/ControllerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/ControllerBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Setup/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Setup/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/Shared/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Views/_ViewImports.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d83d3dc29c14b7e95c03dbe447e7cb021420/60/2eeb8a1b/Assert.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24372012c6c94138bf3f496e104366ffc8f918/6b/a769f3ea/IDisposable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fb69109d67c049a0b5cb5b15b6653f9112c00/3d/0f9d6aba/IMediator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -204,7 +204,7 @@
       <updated>1730292306155</updated>
       <workItem from="1730292307288" duration="19203000" />
       <workItem from="1730319931166" duration="6177000" />
-      <workItem from="1730380272348" duration="17529000" />
+      <workItem from="1730380272348" duration="20779000" />
     </task>
     <servers />
   </component>
@@ -242,29 +242,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/DDDNerdStore.Vendas.Application/Commands/PedidoCommandHandler.cs</url>
-          <line>17</line>
+          <line>21</line>
           <properties documentPath="C:\Projects\DotNet\DDDNerdStore\src\DDDNerdStore.Vendas.Application\Commands\PedidoCommandHandler.cs" containingFunctionPresentation="Method 'Handle'">
             <startOffsets>
-              <option value="568" />
+              <option value="785" />
             </startOffsets>
             <endOffsets>
-              <option value="569" />
+              <option value="786" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/DDDNerdStore.WebApp.MVC/Controllers/CarrinhoController.cs</url>
-          <line>28</line>
+          <line>42</line>
           <properties documentPath="C:\Projects\DotNet\DDDNerdStore\src\DDDNerdStore.WebApp.MVC\Controllers\CarrinhoController.cs" containingFunctionPresentation="Method 'AdicionarItem'">
             <startOffsets>
-              <option value="801" />
+              <option value="1360" />
             </startOffsets>
             <endOffsets>
-              <option value="802" />
+              <option value="1469" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

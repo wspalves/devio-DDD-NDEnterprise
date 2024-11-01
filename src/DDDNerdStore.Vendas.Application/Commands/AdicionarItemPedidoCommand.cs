@@ -1,4 +1,5 @@
 using DDDNerdStore.Core.Messages;
+using DDDNerdStore.Vendas.Application.Commands.Validator;
 
 namespace DDDNerdStore.Vendas.Application.Commands;
 

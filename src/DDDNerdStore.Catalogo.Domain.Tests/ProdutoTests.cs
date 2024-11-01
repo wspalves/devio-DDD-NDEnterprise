@@ -1,3 +1,5 @@
+using DDDNerdStore.Catalogo.Domain.Entities;
+using DDDNerdStore.Catalogo.Domain.ValueObjects;
 using DDDNerdStore.Core.DomainObjects;
 
 namespace DDDNerdStore.Catalogo.Domain.Tests;

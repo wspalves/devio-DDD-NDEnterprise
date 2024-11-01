@@ -1,6 +1,7 @@
 using AutoMapper;
 using DDDNerdStore.Catalogo.Application.DTOs;
 using DDDNerdStore.Catalogo.Domain;
+using DDDNerdStore.Catalogo.Domain.Entities;
 
 namespace DDDNerdStore.Catalogo.Application.AutoMapper;
 

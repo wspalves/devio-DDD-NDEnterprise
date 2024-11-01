@@ -1,3 +1,4 @@
+using DDDNerdStore.Catalogo.Domain.Entities;
 using DDDNerdStore.Core.Data;
 
 namespace DDDNerdStore.Catalogo.Domain;

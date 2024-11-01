@@ -1,6 +1,4 @@
-using DDDNerdStore.Core.Messages;
-
-namespace DDDNerdStore.Core.DomainObjects;
+namespace DDDNerdStore.Core.Messages.CommonMessages.DomainEvents;
 
 public class DomainEvent : Event
 {

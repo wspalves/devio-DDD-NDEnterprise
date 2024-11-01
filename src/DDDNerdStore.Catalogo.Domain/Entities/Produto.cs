@@ -1,6 +1,7 @@
+using DDDNerdStore.Catalogo.Domain.ValueObjects;
 using DDDNerdStore.Core.DomainObjects;
 
-namespace DDDNerdStore.Catalogo.Domain;
+namespace DDDNerdStore.Catalogo.Domain.Entities;
 
 public class Produto : Entity, IAggregateRoot
 {

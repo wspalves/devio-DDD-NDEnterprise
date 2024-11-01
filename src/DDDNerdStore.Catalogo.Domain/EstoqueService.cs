@@ -1,5 +1,5 @@
 using DDDNerdStore.Catalogo.Domain.Events;
-using DDDNerdStore.Core.Bus;
+using DDDNerdStore.Core.Communication.Mediator;
 using MediatR;
 
 namespace DDDNerdStore.Catalogo.Domain;

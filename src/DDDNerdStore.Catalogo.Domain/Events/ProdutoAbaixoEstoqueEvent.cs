@@ -1,4 +1,5 @@
 using DDDNerdStore.Core.DomainObjects;
+using DDDNerdStore.Core.Messages.CommonMessages.DomainEvents;
 
 namespace DDDNerdStore.Catalogo.Domain.Events;
 

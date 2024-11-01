@@ -1,4 +1,5 @@
 using DDDNerdStore.Catalogo.Domain;
+using DDDNerdStore.Catalogo.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

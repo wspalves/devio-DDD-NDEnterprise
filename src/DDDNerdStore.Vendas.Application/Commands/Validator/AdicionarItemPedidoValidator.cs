@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace DDDNerdStore.Vendas.Application.Commands;
+namespace DDDNerdStore.Vendas.Application.Commands.Validator;
 
 public class AdicionarItemPedidoValidator : AbstractValidator<AdicionarItemPedidoCommand>
 {
